@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blog web | <%=t%></title>
+        <style>
+              body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom , rgb(5, 105, 167) ,  rgb(146, 173, 189)   ); 
+  
+              }
+              main{
+                text-align: center;
+              }
+              main h1{
+                color: #ffffff;
+              }main p{
+                color: #000000;
+                text-align: center;
+              }
+                </style>
+              </head>
+<body>
+    <%- include('./partial/nav')%>
+    <main>
+        <h1>About Us</h1>
+        <p>Welcome to BLOG APP, your ultimate destination for insightful and engaging content on a wide range of topics. Our mission is to provide a platform where ideas flourish, discussions thrive, and creativity sparks. Whether you're a seasoned enthusiast or a curious explorer, our team of dedicated writers and editors is committed to delivering thought-provoking articles, helpful guides, and inspiring stories that resonate with you. Join us on this journey of discovery and learning. Together, let's explore the world through the power of words.</p>
+    </main>
+    <%- include('./partial/footer')%>
+</body>
+</html>

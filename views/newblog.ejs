@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Web | <%=t%></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <%- include('./partial/nav')%>
+    
+    <div class="form-container">
+        <div class="form">
+            <h2>Create a Blog</h2>
+
+            <form action="/n" method="post">
+                BLOG TITLE :<br>
+                <input type="text" name="title" required><br>
+                BLOG SNIPPET :<br>
+                <input type="text" name="snippet" required><br>
+                BLOG BODY :<br>
+                <textarea name="body" id="body" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </div>
+    </div>
+    <%- include('./partial/footer')%>
+</body>
+</html>

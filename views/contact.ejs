@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blog web | <%=t%></title>
+        <style>
+              body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom , rgb(5, 105, 167) ,  rgb(146, 173, 189)   ); 
+  
+        }
+            main {
+    flex: 1; /* Ensure main content area takes up remaining space */
+    padding: 20px; /* Add padding to main content area */
+    text-align: center;
+}
+
+main h1 {
+    font-size: 32px;
+    color: #ffffff; /* Dark blue color */
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.contact-info, .social-media {
+    margin-top: 20px;
+}
+
+.contact-info h2, .social-media h2 {
+    font-size: 24px;
+    color: #ffffff; /* Dark blue color */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 8px;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #000000; /* Dark blue color */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+    color: #1565c0; /* Darker blue on hover */
+}
+        </style>
+    </head>
+
+<body>
+    <%- include('./partial/nav')%>
+    <main>
+        <h1>Contact Us</h1>
+        <p>Hello user, what can we help you with today?</p>
+    
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> +1-123-456-7890</p>
+            <p><strong>Email:</strong> contact@yourblog.com</p>
+        </div>
+    
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://twitter.com/example">Twitter</a></li>
+                <li><a href="https://facebook.com/example">Facebook</a></li>
+                <li><a href="https://instagram.com/example">Instagram</a></li>
+            </ul>
+        </div>
+    </main>
+    <%- include('./partial/footer')%>
+</body>
+</html>

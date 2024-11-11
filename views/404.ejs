@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head') %>
+    <style>
+       body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom , rgb(5, 105, 167) ,  rgb(146, 173, 189)   ); 
+  
+        }
+        h1 {
+            font-size: 72px;
+            color: #d32f2f; /* Red color for 404 */
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partial/nav') %>
+    <h1>404 oops!!!</h1>
+    <p>Can't get     <%= p %></p>
+    <%- include('./partial/footer') %>
+</body>
+</html>
